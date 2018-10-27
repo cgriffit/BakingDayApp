@@ -6,36 +6,58 @@
   </head>
   <body>
     <main>
-      <div id="foodTypesContainer">
-        <div class="foodType" id="cookies">
-          <p class="foodLabel">Cookies</p>
+      <div id="container">
+        <div id="foodTypesContainer">
+          <div class="foodType" id="cookies">
+            <p class="foodLabel">Cookies</p>
+          </div>
+          <div class="foodList hide">
+              <ul>
+                <li>Chocolate Marshmallow Cookies</li>
+                <li>Sugar Cookies</li>
+                <li>Santa's Whiskers</li>
+              </ul>
+          </div>
+          <div class="foodType" id="candies">
+            <p class="foodLabel">Candies</p>
+          </div>
+          <div class="foodList hide">
+              <ul>
+                <li>Fudge</li>
+                <li>Toffee</li>
+              </ul>
+          </div>
+          <div class="foodType" id="appetizers">
+            <p class="foodLabel">Appetizers</p>
+          </div>
+          <div class="foodList hide">
+              <ul>
+                <li>Toffee Party Mix</li>
+                <li>Hoffmans' Cracker Mix</li>
+              </ul>
+          </div>
         </div>
-        <div class="foodList hide">
-            <ul>
-              <li>Chocolate Marshmallow Cookies</li>
-              <li>Sugar Cookies</li>
-              <li>Santa's Whiskers</li>
-            </ul>
-        </div>
-        <div class="foodType" id="candies">
-          <p class="foodLabel">Candies</p>
-        </div>
-        <div class="foodList hide">
-            <ul>
-              <li>Fudge</li>
-              <li>Toffee</li>
-            </ul>
-        </div>
-        <div class="foodType" id="appetizers">
-          <p class="foodLabel">Appetizers</p>
-        </div>
-        <div class="foodList hide">
-            <ul>
-              <li>Toffee Party Mix</li>
-              <li>Hoffmans' Cracker Mix</li>
-            </ul>
-        </div>
+        <button id="addFood">Add Something</button>
       </div>
+      <form id="form" class="hide">
+        <h3>Please select the category and enter the name</h3>
+        <div>
+          <input type="radio" id="radioCookies" name="categoryChoice" value="cookies">
+          <label for="radioCookies">Cookies</label>
+
+          <input type="radio" id="radioCandies" name="categoryChoice" value="candies">
+          <label for="radioCandies">Candies</label>
+
+          <input type="radio" id="radioApps" name="categoryChoice" value="appetizers">
+          <label for="radioApps">Appetizers</label>
+        </div>
+        <div>
+          <input type="text" id="name" name="name" placeholder="...">
+        </div>
+        <div>
+          <input type="submit" id="submitBtn" value="Do The Thing">
+        </div>
+      </form>
     </main>
     <footer>
       <ul>
