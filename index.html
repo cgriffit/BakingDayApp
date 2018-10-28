@@ -1,61 +1,59 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="style.css" >
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Baking Day App</title>
   </head>
   <body>
-    <main>
-      <div id="container">
-        <div id="foodTypesContainer">
-          <div class="foodType" id="cookies">
-            <p class="foodLabel">Cookies</p>
-          </div>
-          <div class="foodList hide">
-              <ul id="cookiesList">
-              </ul>
-          </div>
-          <div class="foodType" id="candies">
-            <p class="foodLabel">Candies</p>
-          </div>
-          <div class="foodList hide">
-              <ul id="candiesList">
-              </ul>
-          </div>
-          <div class="foodType" id="appetizers">
-            <p class="foodLabel">Appetizers</p>
-          </div>
-          <div class="foodList hide">
-              <ul id="appsList">
-              </ul>
-          </div>
+    <div id="container">
+      <div id="foodTypesContainer">
+        <div class="foodType" id="cookies">
+          <p class="foodLabel">Cookies</p>
         </div>
-        <button id="addFood">Add Something</button>
+        <div class="foodList hide">
+            <ul id="cookiesList">
+            </ul>
+        </div>
+        <div class="foodType" id="candies">
+          <p class="foodLabel">Candies</p>
+        </div>
+        <div class="foodList hide">
+            <ul id="candiesList">
+            </ul>
+        </div>
+        <div class="foodType" id="appetizers">
+          <p class="foodLabel">Appetizers</p>
+        </div>
+        <div class="foodList hide">
+            <ul id="appsList">
+            </ul>
+        </div>
       </div>
-      <form id="form" class="hide">
-        <h3>Please select the category and enter the name</h3>
-        <div>
-          <input type="radio" id="radioCookies" name="categoryChoice" value="cookies">
-          <label for="radioCookies">Cookies</label>
+      <button id="addFood">Add Something</button>
+    </div>
+    <form id="form" class="hide">
+      <h3>Please select the category and enter the name</h3>
+      <div>
+        <input type="radio" id="radioCookies" name="categoryChoice" value="cookies">
+        <label for="radioCookies">Cookies</label>
 
-          <input type="radio" id="radioCandies" name="categoryChoice" value="candies">
-          <label for="radioCandies">Candies</label>
+        <input type="radio" id="radioCandies" name="categoryChoice" value="candies">
+        <label for="radioCandies">Candies</label>
 
-          <input type="radio" id="radioApps" name="categoryChoice" value="appetizers">
-          <label for="radioApps">Appetizers</label>
-        </div>
-        <div>
-          <input type="text" id="foodName" name="name" placeholder="...">
-        </div>
-        <div>
-          <button type="submit" id="submitBtn">Do The Thing</button>
-        </div>
-      </form>
-    </main>
+        <input type="radio" id="radioApps" name="categoryChoice" value="appetizers">
+        <label for="radioApps">Appetizers</label>
+      </div>
+      <div>
+        <input type="text" id="foodName" name="name" placeholder="...">
+      </div>
+      <div>
+        <button type="submit" id="submitBtn">Do The Thing</button>
+      </div>
+    </form>
     <footer>
       <ul>
         <li><a href="#">2018</a></li>
-        <li><a href="2017.html">2017</a></li>
+        <li><a href="seventeen.html">2017</a></li>
         <li><a href="#">2016</a></li>
         <li><a href="#">2015</a></li>
       </ul>
