@@ -43,7 +43,7 @@ $(document).ready(function() {
     });
   });
 
-  if (document.title == "Baking Day App") {
+  if (document.title == "Baking Day Tracker") {
     //show form on button click
     let addFood = document.getElementById("addFood");
     let form = document.getElementById("form");
