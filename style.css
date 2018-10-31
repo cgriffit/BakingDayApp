@@ -28,6 +28,9 @@ input[type="text"] {
   font-size: 0.75em;
   font-family: 'Archivo', sans-serif;
 }
+input[type="text"]:focus {
+  outline: none;
+}
 footer ul{
   background-color: #C1F7DC;
   height: 5vh;
@@ -42,6 +45,10 @@ footer li {
 }
 footer li a {
   color: black;
+  text-decoration: none;
+}
+footer li a:hover {
+  text-decoration: underline;
 }
 .container {
   height: 90vh;
@@ -144,4 +151,7 @@ footer li a {
   background-color: #C3D2D5;
   font-family: 'Archivo', sans-serif;
   outline: none;
+}
+#addFood:hover, #submitBtn:hover {
+  background-color: #AFBDBF;
 }
