@@ -43,6 +43,14 @@ $(document).ready(function() {
     });
   });
 
+  //add styling to current link
+  let yearLinks = document.querySelectorAll("footer a");
+  for (let i = 0; i < yearLinks.length; i++) {
+    if (yearLinks[i].getAttribute("href") == "#") {
+      yearLinks[i].classList.add("current");
+    }
+  }
+
   if (document.title == "Baking Day Tracker") {
     //show form on button click
     let addFood = document.getElementById("addFood");

@@ -120,6 +120,9 @@ footer li a {
   display: block;
   margin-bottom: 1%;
 }
+.current {
+  font-weight: bold;
+}
 #cookies, #candies {
   border-bottom: 1px solid black;
 }
