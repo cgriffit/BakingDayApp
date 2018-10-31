@@ -47,17 +47,19 @@ $(document).ready(function() {
     //show form on button click
     let addFood = document.getElementById("addFood");
     let form = document.getElementById("form");
+    let submitBtn = document.getElementById("submitBtn");
+
     addFood.addEventListener("click", function() {
       form.classList.toggle("hide");
       form.classList.toggle("formContainer");
     });
 
-    $("#submitBtn").on("click", function(event) {
+    submitBtn.addEventListener("click", function() {
       //prevent form from submitting
       event.preventDefault();
 
       let catChecked = $("input[name=categoryChoice]:checked").val();
-      let foodName = $("#foodName").val();
+      let foodName = document.getElementById("foodName").value;
       let idxObj = {
         "cookies":0,
         "candies":1,
@@ -71,8 +73,8 @@ $(document).ready(function() {
         $(foodLists[idxObj[catChecked]]).append("<li>" + yearsObj[year][idxObj[catChecked]][yearsObj[year][idxObj[catChecked]].length - 1] + "</li>");
 
         //clear form
-        $("#foodName").val("");
         $("input[name=categoryChoice]").prop("checked", false);
+        document.getElementById("foodName").value = "";
 
         //hide form
         form.classList.toggle("hide");
