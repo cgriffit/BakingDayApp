@@ -52,11 +52,12 @@ $(document).ready(function() {
   }
 
   if (document.title == "Baking Day Tracker") {
-    //show form on button click
+
     let addFood = document.getElementById("addFood");
     let form = document.getElementById("form");
     let submitBtn = document.getElementById("submitBtn");
 
+    //show form on button click
     addFood.addEventListener("click", function() {
       form.classList.toggle("hide");
       form.classList.toggle("formContainer");
@@ -68,16 +69,23 @@ $(document).ready(function() {
 
       let catChecked = $("input[name=categoryChoice]:checked").val();
       let foodName = document.getElementById("foodName").value;
+      let foodNameWords = foodName.split(" ");
+      let capitalizedFoodName = "";
       let idxObj = {
         "cookies":0,
         "candies":1,
         "appetizers":2
       };
 
+      //capitalize first letter of each word
+      foodNameWords.forEach(function(word) {
+        capitalizedFoodName += word.charAt(0).toUpperCase() + word.slice(1) + " ";
+      })
+
       //check that form has been filled out
       if (catChecked && foodName != ""){
         //add entry to array and list
-        yearsObj[year][idxObj[catChecked]].push(foodName);
+        yearsObj[year][idxObj[catChecked]].push(capitalizedFoodName);
         $(foodLists[idxObj[catChecked]]).append("<li>" + yearsObj[year][idxObj[catChecked]][yearsObj[year][idxObj[catChecked]].length - 1] + "</li>");
 
         //clear form
