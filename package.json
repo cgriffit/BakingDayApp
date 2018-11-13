@@ -1,0 +1,24 @@
+{
+  "name": "bakingdayapp",
+  "version": "1.0.0",
+  "description": "Catalog for annual family baking day",
+  "main": "app.js",
+  "scripts": {
+    "dev": "parcel ./src/*.html",
+    "build": "parcel build ./src/*.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simplyspoke/BakingDayApp.git"
+  },
+  "author": "Chelsea Griffith",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/simplyspoke/BakingDayApp/issues"
+  },
+  "homepage": "https://github.com/simplyspoke/BakingDayApp#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.10.3"
+  }
+}
