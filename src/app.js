@@ -19,7 +19,7 @@ $(document).ready(function() {
     "2015": [
       ["Salted Dark Chocolate Rolo-Filled Cookies", "Pumpkin Butterscotch Chip Cookies", "Chocolate Marshmallow Cookies", "Peanut Butter Star Cookies", "Sugar Cookies", "Santa's Whiskers","Cranberry Cookies with Browned Butter Glaze"],
       ["Fudge", "Round Pretzels with Hugs and M&M's", "Round Pretzels with Rolos and Pecans", "Bailey's Truffles", "Toffee"],
-      ["Spinach and Kale Roll-Ups", "Baked Brie with Crostini and Fruit", "Hummus and Pita Chips", "Toffee Party Mix", "Buffalo Chicken Dip", "Bacon-Wrapped Sweet Potatoes", "Hoffmans' Cracker Mix"]
+      ["Spinach and Kale Roll-Ups", "Baked Brie with Crostini and Fruit", "Hummus and Pita Chips", "Toffee Party Mix", "Buffalo Chicken Dip", "Bacon-Wrapped Sweet Potatoes", "Hoffmans' Cracker Mix","Baked Brie with Crostini and Fruit", "Hummus and Pita Chips", "Toffee Party Mix", "Buffalo Chicken Dip", "Bacon-Wrapped Sweet Potatoes", "Hoffmans' Cracker Mix"]
     ]
   };
 
