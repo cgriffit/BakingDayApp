@@ -34,6 +34,7 @@ input[type="text"]:focus {
 footer ul{
   background-color: #C1F7DC;
   height: 5vh;
+  font-family: 'Archivo Narrow', sans-serif;
   display:flex;
   flex-direction:row;
   justify-content:flex-end;
